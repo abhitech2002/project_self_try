@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    border: 1px solid black;
+    background-color: rgb(199, 199, 30);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    color: green;
+    margin: 20px;
+    padding-left: 25px;
+}
+
+header nav{
+    display: flex;
+    padding-right: 4%;
+}
+
+nav input[type=text] {
+    padding: 7px;
+    border: none;
+    margin-top: 18px;
+    /* margin-right: 16px; */
+    font-size: 17px;
+}
+button {
+    /* float: right; */
+    padding: 9px 14px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+nav div{
+    letter-spacing: 1px;
+    padding-top: 24px;
+}
+header nav div a {
+    text-decoration: none;
+    padding:10px 25px;
+    /* padding-top: px; */
+    margin: 5px;  
+}
+
+nav div a:hover {
+    color: red;
+    background-color: yellow;
+    text-transform: uppercase;
+}
+
+nav div a:active{
+    cursor: pointer;
+}
