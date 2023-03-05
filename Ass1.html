@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <!-- icon link style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Playfair Display', serif;
+            /* background-color: #191919; */
+        }
+        .head {
+            height: 100vh;
+            width: 100%;
+            background-image: url(../Image/phil.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            overflow: hidden;
+            padding-top: 45px;
+            padding-left: 8%;
+            padding-right: 8%;
+        }
+
+        .logo {
+                color: white;
+                font-size: 35px;
+                letter-spacing: 1px;
+                cursor: pointer;
+        }
+
+        span{
+            color: aqua;
+        }
+
+        nav ul li {
+            display: inline-block;
+            list-style: none;
+            padding: 10px 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            text-transform: capitalize;
+            font-size: 20px;
+        }
+
+        nav ul li a:hover {
+            color: aqua;
+            transition: .4s;
+        }
+        .content {
+            position: absolute;
+            top: 42%;
+            left: 25%;
+        }
+
+        h1 {
+            color: white;
+            margin: 20px 0px 20px;
+            font-size: 75px;
+        }
+
+        h3 {
+            color: white;
+            font-size: 25px;
+            margin-bottom: 50px;
+        }
+
+        h4 {
+            color: #fcfc;
+            letter-spacing: 2px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="head container-lg">
+        <nav class="fixed-top navbar-light navbar-toggler navbar-collapse bg-dark">
+            <h2 class="logo navbar-brand fw-bold fs-4">Hola<span>!!!</span></h2>
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#about">My Skills</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="content">
+        <h4>Hello, My name is</h4>
+        <h1>Abhishek <span>Ojha</span></h1>
+        <!-- <h3>I am Web Developer.</h3> -->
+    </div>  
+
+    
+
+    <section class="home py-5" id="home" style="background-color: #191919;">
+        <div class="container-lg">
+            <div class="row min-vh-100 align-items-center align-content-center">
+                <div class="col-md-6 mt-5 mt-md-0 ">
+                    <div class="home-img text-center">
+                        <img src="../Image/christian.jpg" alt="profile.img" class="image-fluid mw-100 rounded-circle height-auto mt-2 width-400">
+                    </div>
+                </div>
+                <div class="col-md-6 mt-5 mt-md-0 order-md-first">
+                    <div class="home-text">
+                        <p class="text-muted mb-1">Hello I'm</p>
+                        <h1 class="text-primary text-uppercase fs-1 fw-bold">Web Developer</h1>
+                        <h2 class="fs-4 text-white">Abhishek Ojha</h2>
+                        <p class="mt-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam atque vel omnis! Voluptate optio earum rem ducimus similique, temporibus cum!</p>
+                        <a href="#portfolio" class="btn btn-danger px-3 mt-3">My Work</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about py-5" id="about" style="background-color: #191919;">
+        <div class="container-lg py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center">
+                        <h2 class="fw-bold mb-5 text-white">About Me</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 ">
+                    <div class="about-text">
+                        <h3 class="fs-4 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus recusandae perspiciatis autem esse explicabo illo officia, tempora quod culpa soluta cum placeat labore vel porro sint voluptate voluptatem quas vitae.</p>
+                        <div class="row text-center text-uppercase my-3">
+                            <div class="col-sm-4">
+                                <div class="fact-item">
+                                    <h4 class="fs-1 fw-boldS">100</h4>
+                                    <p class="text-muted">Projects Completed</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="fact-item">
+                                    <h4 class="fs-1 fw-boldS">90</h4>
+                                    <p class="text-muted">Happy Clients</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="fact-item">
+                                    <h4 class="fs-1 fw-boldS">95</h4>
+                                    <p class="text-muted">Positive Review</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 d-flex align-items-center">
+                                <a href="#" class="btn btn-danger me-5 px-3">download CV</a>
+                                <div class="social-links">
+                                    <a href="#" class="text-white me-2"><i class="fab fa-facebook"></i></a>
+                                    <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="text-white me-2"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-5 mt-md-0">
+                    <div class="skill-item mb-4">
+                        <h3 class="fs-6">HTML</h3>
+                        <div class="progress" style="height: 5px;">
+                            <div class="progress- bg-primary" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                    </div>
+                    <div class="skill-item mb-4">
+                        <h3 class="fs-6">CSS</h3>
+                        <div class="progress" style="height: 5px;">
+                            <div class="progress- bg-primary" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                    </div>
+                    <div class="skill-item mb-4">
+                        <h3 class="fs-6">JavaScript</h3>
+                        <div class="progress" style="height: 5px;">
+                            <div class="progress- bg-primary" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                    </div>
+                    <div class="skill-item mb-4">
+                        <h3 class="fs-6">Pyhton</h3>
+                        <div class="progress" style="height: 5px;">
+                            <div class="progress- bg-primary" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service -->
+    <section class="service py-5" id="service" style="background-color: #191919;">
+        <div class="container-lg py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center">
+                        <h2 class="fw-bold mb-5 text-white">What I Do</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-item shadow-sm p-4 rounded bg-white">
+                        <div class="icon my-3 text-danger fs-2">
+                            <i class="fa fa-code"></i>
+                        </div>
+                        <h3 class="fs-7 py-2 text-dark">Web Developmwnt</h3>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, est.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-item shadow-sm p-4 rounded bg-white">
+                        <div class="icon my-3 text-danger fs-2">
+                            <i class="fa fa-lightbulb"></i>
+                        </div>
+                        <h3 class="fs-7 py-2 text-dark">Creative Design</h3>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, est.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-item shadow-sm p-4 rounded bg-white">
+                        <div class="icon my-3 text-danger fs-2">
+                            <i class="fa fa-image"></i>
+                        </div>
+                        <h3 class="fs-7 py-2 text-dark">Photoshop</h3>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, est.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact py-5" id="contact" style="background-color: #191919;">
+        <div class="container-lg py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center">
+                        <h2 class="fw-bold mb-5 text-white">Contact</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="contact-item d-flex mb-3">
+                        <div class="icon fs-4 text-danger">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="text ms-3">
+                            <h3 class="fs-5">Email</h3>
+                            <p class="text-muted">example@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item d-flex mb-3">
+                        <div class="icon fs-4 text-danger">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="text ms-3">
+                            <h3 class="fs-5">Phone</h3>
+                            <p class="text-muted">91 78956 43524</p>
+                        </div>
+                    </div>
+                    <div class="contact-item d-flex mb-3">
+                        <div class="icon fs-4 text-danger">
+                            <i class="fas fa-location"></i>
+                        </div>
+                        <div class="text ms-3">
+                            <h3 class="fs-5">Visited Office</h3>
+                            <p class="text-muted">virar east</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="contact-form">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-lg-6 mb-4">
+                                    <input type="text" name="name" id="name" placeholder="Your Name" class="form-control form-control-lg fs-6 border-0 shadow-sm">
+                                </div>
+                                <div class="col-lg-6 mb-4">
+                                    <input type="text" name="email" id="email" placeholder="Your Email" class="form-control form-control-lg fs-6 border-0 shadow-sm">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 mb-4">
+                                    <input type="text" name="subject" id="subject" placeholder="Subject" class="form-control form-control-lg fs-6 border-0 shadow-sm">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 mb-4">
+                                    <textarea rows="5" placeholder="Your Message" class="form-control form-control-lg fs-6 border-0 shadow-sm"></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 mb-4">
+                                    <button type="submit" class="btn btn-danger px-3">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer border-top py-4" style="background-color: #191919;">
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="m-0 text-center text-white">&copy; The Portfolio</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
